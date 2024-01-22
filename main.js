@@ -126,7 +126,7 @@ $('.retailer-list .unit').on('click', function(){
         var appendage = retailers.retailers[$(this).data('store')] + ".png";
     }
     else{
-        var appendage = "enc_" + retailers.retailers[$(this).data('store')] + ".gif";
+        var appendage = "https://images-ext-2.discordapp.net/external/VhGPgOcI2WsHo6-Oh3-zlkMsXXD6L55AcLAmKoqM5LA/https/s3rewards.s3.amazonaws.com/1705316519_65a510a78aca8.gif";
     }
 
         console.log(appendage);
