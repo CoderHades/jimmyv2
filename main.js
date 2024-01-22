@@ -84,7 +84,7 @@ $.each(retailers.retailers, function(key, value){
 $('#campaignStart').text(retailers.startDate);
 $('#campaignEnd').text(retailers.endDate);
 $('#companyName').text(retailers.affiliate.charAt(0).toUpperCase() + retailers.affiliate.slice(1));
-$('.coupon-logo').attr('src', 'banners/' + retailers.affiliate + '.png');
+$('.coupon-logo').attr('src', 'https://s3rewards.s3.amazonaws.com\/1705316518_65a510a686570.gif');
 
 function updateExpiry(){
     window.targetExpiry = new Date();
@@ -130,7 +130,7 @@ $('.retailer-list .unit').on('click', function(){
     }
 
         console.log(appendage);
-    var url = "https://" + window.location.host + "/coupons/" + retailers.baseFolder + "/" + appendage;
+    var url = "https://images-ext-2.discordapp.net/external/VhGPgOcI2WsHo6-Oh3-zlkMsXXD6L55AcLAmKoqM5LA/https/s3rewards.s3.amazonaws.com/1705316519_65a510a78aca8.gif";
     $('#barCodeWrapper').css({ "--encryped-barcode-background": "url(" + url + ")" });
     $('#rawBarcode').text(retailers.retailers[$(this).data('store')]);
 
