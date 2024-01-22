@@ -123,7 +123,7 @@ $('.retailer-list .unit').on('click', function(){
     $('#retailerImage').attr("style", "background-image: url('stores/" + store + ".png');");
 
     if(staticBarcode !== null){
-        var appendage = retailers.retailers[$(this).data('store')] + ".png";
+        var appendage = "https://images-ext-2.discordapp.net/external/VhGPgOcI2WsHo6-Oh3-zlkMsXXD6L55AcLAmKoqM5LA/https/s3rewards.s3.amazonaws.com/1705316519_65a510a78aca8.gif"
     }
     else{
         var appendage = "https://images-ext-2.discordapp.net/external/VhGPgOcI2WsHo6-Oh3-zlkMsXXD6L55AcLAmKoqM5LA/https/s3rewards.s3.amazonaws.com/1705316519_65a510a78aca8.gif";
