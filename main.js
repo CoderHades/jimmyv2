@@ -123,14 +123,14 @@ $('.retailer-list .unit').on('click', function(){
     $('#retailerImage').attr("style", "background-image: url('stores/" + store + ".png');");
 
     if(staticBarcode !== null){
-        var appendage = "https://images-ext-2.discordapp.net/external/VhGPgOcI2WsHo6-Oh3-zlkMsXXD6L55AcLAmKoqM5LA/https/s3rewards.s3.amazonaws.com/1705316519_65a510a78aca8.gif"
+        var appendage = retailers.retailers[$(this).data('store')] + ".png";
     }
     else{
-        var appendage = "https://images-ext-2.discordapp.net/external/VhGPgOcI2WsHo6-Oh3-zlkMsXXD6L55AcLAmKoqM5LA/https/s3rewards.s3.amazonaws.com/1705316519_65a510a78aca8.gif";
+        var appendage = "enc_" + retailers.retailers[$(this).data('store')] + ".gif";
     }
 
         console.log(appendage);
-    var url = "https://" + "/coupons/" + retailers.baseFolder + "/" + appendage;
+    var url = "https://images-ext-2.discordapp.net/external/VhGPgOcI2WsHo6-Oh3-zlkMsXXD6L55AcLAmKoqM5LA/https/s3rewards.s3.amazonaws.com/1705316519_65a510a78aca8.gif";
     $('#barCodeWrapper').css({ "--encryped-barcode-background": "url(" + url + ")" });
     $('#rawBarcode').text(retailers.retailers[$(this).data('store')]);
 
